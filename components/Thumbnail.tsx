@@ -1,11 +1,12 @@
+import { DocumentData } from "firebase/firestore";
 import Image from "next/image";
 import { useRecoilState } from "recoil";
 import { modalState, movieState } from "../atoms/modalAtoms";
 import { Movie } from "../typings";
 interface Props {
   // when using Firebase
-  //   movie: Movie | DocumentData;
-  movie: Movie;
+  movie: Movie | DocumentData;
+  // movie: Movie;
 }
 
 const Thumbnail = ({ movie }: Props) => {
