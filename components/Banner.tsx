@@ -22,7 +22,7 @@ function Banner({ netflixOriginals }: Props) {
     );
   }, [netflixOriginals]);
 
-  function truncate({ str, n }: { str; n }): any {
+  function truncate({ str, n }: { str: any; n: any }): any {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }
 
